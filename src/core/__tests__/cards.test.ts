@@ -42,10 +42,15 @@ describe("card dataset", () => {
       const categories = card.rewards.map((rule) => rule.category);
       expect(categories).toContain("other");
 
-      // Each rule references a valid category, and cap/capPeriod are paired.
+      // Each rule references a valid category, cap/capPeriod are paired, and
+      // postCapRate is null or a non-negative number.
       for (const rule of card.rewards) {
         expect(VALID_CATEGORIES.has(rule.category)).toBe(true);
         expect(rule.cap === null).toBe(rule.capPeriod === null);
+        if (rule.postCapRate !== null) {
+          expect(typeof rule.postCapRate).toBe("number");
+          expect(rule.postCapRate).toBeGreaterThanOrEqual(0);
+        }
       }
     },
   );

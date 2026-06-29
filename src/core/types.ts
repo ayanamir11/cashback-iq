@@ -19,6 +19,10 @@ export interface RewardRule {
   rate: number;
   cap: number | null; // spend cap in USD per capPeriod; null if uncapped
   capPeriod: "quarterly" | "yearly" | null;
+  // Rate applied to spend above `cap`. When null, overflow falls back to the
+  // card's "other" rule rate. Needed when the capped category IS "other"
+  // (e.g. Freedom Flex's 5%-then-1%), which can't reference itself.
+  postCapRate: number | null;
 }
 
 // Sign-up / welcome bonus terms.

@@ -1,1 +1,113 @@
-[]
+[
+  {
+    "id": "citi-double-cash",
+    "name": "Citi Double Cash",
+    "issuer": "Citi",
+    "annualFee": 0,
+    "rewardType": "cashback",
+    "pointValueCents": 1.0,
+    "rewards": [
+      {
+        "category": "other",
+        "rate": 0.02,
+        "cap": null,
+        "capPeriod": null,
+        "postCapRate": null
+      }
+    ],
+    "welcomeBonus": {
+      "points": 20000,
+      "minSpend": 1500,
+      "months": 6
+    },
+    "credits": []
+  },
+  {
+    "id": "amex-gold",
+    "name": "American Express Gold Card",
+    "issuer": "Amex",
+    "annualFee": 325,
+    "rewardType": "points",
+    "pointValueCents": 1.0,
+    "rewards": [
+      {
+        "category": "dining",
+        "rate": 4,
+        "cap": null,
+        "capPeriod": null,
+        "postCapRate": null
+      },
+      {
+        "category": "groceries",
+        "rate": 4,
+        "cap": 25000,
+        "capPeriod": "yearly",
+        "postCapRate": null
+      },
+      {
+        "category": "travel",
+        "rate": 3,
+        "cap": null,
+        "capPeriod": null,
+        "postCapRate": null
+      },
+      {
+        "category": "other",
+        "rate": 1,
+        "cap": null,
+        "capPeriod": null,
+        "postCapRate": null
+      }
+    ],
+    "welcomeBonus": {
+      "points": 60000,
+      "minSpend": 6000,
+      "months": 6
+    },
+    "credits": [
+      {
+        "name": "Dining Credit",
+        "value": 120,
+        "description": "Up to $10/month at select restaurants and Grubhub"
+      },
+      {
+        "name": "Uber Cash",
+        "value": 120,
+        "description": "$10/month in Uber Cash for rides or Uber Eats"
+      }
+    ]
+  },
+  {
+    "id": "chase-freedom-flex",
+    "name": "Chase Freedom Flex",
+    "issuer": "Chase",
+    "annualFee": 0,
+    "rewardType": "cashback",
+    "pointValueCents": 1.0,
+    "rewards": [
+      {
+        "category": "travel",
+        "rate": 0.05,
+        "cap": null,
+        "capPeriod": null,
+        "postCapRate": null
+      },
+      {
+        "category": "dining",
+        "rate": 0.03,
+        "cap": null,
+        "capPeriod": null,
+        "postCapRate": null
+      },
+      {
+        "category": "other",
+        "rate": 0.05,
+        "cap": 1500,
+        "capPeriod": "quarterly",
+        "postCapRate": 0.01
+      }
+    ],
+    "welcomeBonus": null,
+    "credits": []
+  }
+]
